@@ -12,7 +12,7 @@ require "action_mailbox/engine"
 require "action_text/engine"
 require "action_view/railtie"
 require "action_cable/engine"
-require "sprockets/railtie"
+#require "sprockets/railtie"
 require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -25,9 +25,9 @@ module App
     config.load_defaults 6.1
 
     #追加
-    config.assets.compile = true
-    config.assets.initialize_on_precompile=false
-    
+    #config.assets.compile = true
+    #config.assets.initialize_on_precompile=false
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files
